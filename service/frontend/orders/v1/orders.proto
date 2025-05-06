@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-package orders.service.v1;
+package orders.service.frontend.orders.v1;
 
 import "base/frontend/v1/orders.proto";
 import "google/protobuf/empty.proto";
 
-option go_package = "github.com/AskatNa/apis-gen-orders-service/service/v1;orderssvc";
+option go_package = "github.com/AskatNa/apis-gen-orders-service/service/frontend/orders/v1;orderssvc";
 
 service OrderService {
   rpc CreateOrder(CreateOrderRequest) returns (OrderResponse);
@@ -44,6 +44,6 @@ message OrderResponse {
 }
 
 message ListOrdersResponse {
-  repeated base.fronented.v1.Order orders = 1;
+  repeated base.frontend.v1.Order orders = 1;
   string next_page_token = 2;
 }
