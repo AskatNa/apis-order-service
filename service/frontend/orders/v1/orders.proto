@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package orders.service.v1;
 
-import "/base/frontend/v1/orders.proto";
+import "base/frontend/v1/orders.proto";
 import "google/protobuf/empty.proto";
 
 option go_package = "github.com/AskatNa/apis-gen-orders-service/service/v1;orderssvc";
