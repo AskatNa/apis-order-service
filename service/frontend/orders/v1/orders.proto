@@ -29,7 +29,7 @@ message GetOrderRequest {
 
 message UpdateOrderStatusRequest {
   string order_id = 1;
-  OrderStatus new_status = 2;
+  base.frontend.v1.OrderStatus new_status = 2;
 }
 
 message ListOrdersRequest {
