@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package orders.service.v1;
 
-import "orders/base/v1/orders.proto";
+import "/base/frontend/v1/orders.proto";
 import "google/protobuf/empty.proto";
 
 option go_package = "github.com/AskatNa/apis-gen-orders-service/service/v1;orderssvc";
@@ -40,10 +40,10 @@ message ListOrdersRequest {
 }
 
 message OrderResponse {
-  orders.base.v1.Order order = 1;
+  base.frontend.v1.Order order = 1;
 }
 
 message ListOrdersResponse {
-  repeated orders.base.v1.Order orders = 1;
+  repeated base.fronented.v1.Order orders = 1;
   string next_page_token = 2;
 }
