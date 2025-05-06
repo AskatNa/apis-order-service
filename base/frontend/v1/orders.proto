@@ -3,7 +3,7 @@ syntax = "proto3";
 package orders.base.v1;
 
 import "google/protobuf/timestamp.proto";
-import "/base/frontend/v1/inventory.proto";
+import "base/frontend/v1/inventory.proto";
 
 option go_package = "github.com/AskatNa/apis-gen-orders-service/base/v1;ordersbase";
 
