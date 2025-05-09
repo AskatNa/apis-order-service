@@ -21,7 +21,7 @@ message OrderItem {
   string product_id = 1;
   int32 quantity = 2;
   float unit_price = 3;
-  .base.frontend.v1.Product product_details = 4;
+  inventory.base.frontend.v1.Product product_details = 4;
 }
 
 enum OrderStatus {

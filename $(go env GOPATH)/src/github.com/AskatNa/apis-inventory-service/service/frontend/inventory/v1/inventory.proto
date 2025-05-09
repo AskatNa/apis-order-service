@@ -2,9 +2,8 @@ syntax = "proto3";
 
 package inventory.service.frontend.inventory.v1;
 
-import "base/frontend/v1/inventory.proto";
 import "google/protobuf/empty.proto";
-
+import "github.com/AskatNa/apis-inventory-service/base/frontend/v1/inventory.proto";
 option go_package = "github.com/AskatNa/apis-gen-inventory-service/service/frontend/inventory/v1;inventorysvc";
 
 service InventoryService {
