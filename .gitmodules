@@ -1,0 +1,3 @@
+[submodule "external/inventory"]
+	path = external/inventory
+	url = https://github.com/AskatNa/apis-inventory-service.git
